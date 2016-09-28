@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 1.0
+ * @version 1.1
  * @link http://www.ihewro.com
  */
 

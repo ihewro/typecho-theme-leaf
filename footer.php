@@ -1,4 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php $this->need('header.php'); ?>
 
 <!--  #footer -->
 <div class="footer">
@@ -7,9 +8,7 @@
 
   </div>
   <div class="footer-text">
-		<div>
-			Theme is <span class="codename">Leaf</span> by <a href="http://www.ihewro.com" class="link" target="_blank">ihewro</a> / Powered by <a href="http://www.typecho.org" class="link" target="_blank">Typecho</a>
-		</div>
+		
 		<div class="footer-info">
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>" class="link"><?php $this->options->title(); ?></a>
 		</div>

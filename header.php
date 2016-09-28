@@ -22,8 +22,7 @@
 
 
     <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px' rel='stylesheet' type='text/css'>
-
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet">
 
 
     <!-- 通过自有函数输出HTML头部信息 -->
