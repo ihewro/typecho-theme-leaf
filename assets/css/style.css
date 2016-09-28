@@ -17,6 +17,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 14px;
+  font-family:"Open Sans", "Microsoft YaHei", Arial, Verdana, sans-serif;
 }
 
 blockquote {
@@ -174,12 +175,14 @@ figure {
 
 /* footer */
 .footer {
-  position: absolute;
-  bottom: 6px;
+  position: absolute;    
+  bottom: 10px;
   left: 0;
-  height: 100px;
+  height: 133px;
   width: 100%;
   text-align: center;
+  color: #333;
+  font-size: 13px;
 }
 
 .footer-clear {
@@ -207,6 +210,10 @@ figure {
 .footer-info {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+div#friends .link {
+    color: #666;
 }
 
 /* =======================
@@ -279,7 +286,7 @@ figure {
 .archive-iterm {
   display: block;
   padding: 30px 0;
-  height: 100px;
+  height: auto;
   text-decoration: none;
 }
 
@@ -291,7 +298,7 @@ figure {
 .archive-date {
   margin: 0;
   line-height: 20px;
-  height: 20px;
+  height: auto;
 }
 
 .archive-title {
@@ -329,7 +336,7 @@ figure {
 
 .post-header {
   margin-top: 50px;
-  height: 100px;
+  height: auto;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
@@ -339,7 +346,7 @@ figure {
   margin: 0;
   padding-top: 40px;
   line-height: 20px;
-  height: 60px;
+      height: auto;
   font-family: "Open Sans", "Microsoft YaHei", Arial, Verdana, sans-serif;
   font-size: 18px;
 }
@@ -416,6 +423,7 @@ figure {
 .p-n-sep ~ .p-n-next {
   right: 0;
   width: 45%;
+  height:auto;
 }
 
 .post-comment {
@@ -675,4 +683,8 @@ a.social:hover {
 
 .fa{
 	font-size: 14px;
+}
+
+div#pjax-container {
+    height: 100%;
 }

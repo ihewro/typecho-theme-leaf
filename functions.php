@@ -15,5 +15,13 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 	$form->addInput($socialtwitter);
 	$socialgoogle = new Typecho_Widget_Helper_Form_Element_Text('socialgoogle', NULL, NULL, _t('输入Google +链接'), _t('在这里输入Google +链接,带http://'));
 	$form->addInput($socialgoogle);
+	
 
+}
+
+
+// pjax判断
+
+function is_pjax(){   
+    return array_key_exists('HTTP_X_PJAX', $_SERVER) && $_SERVER['HTTP_X_PJAX'];   
 }

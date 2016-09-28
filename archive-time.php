@@ -6,7 +6,7 @@
  * @package custom
  */
 $this->need('header.php'); ?>
-
+<div id="pjax-container">
 <div class="footer-clear archive">
 
   
@@ -34,6 +34,6 @@ $this->need('header.php'); ?>
 
 
 </div>
-
+</div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>

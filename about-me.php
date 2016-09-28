@@ -6,16 +6,16 @@
  * @package custom
  */
 $this->need('header.php'); ?>
-
+<div id="pjax-container">
 <div class="footer-clear vertical-center-child about">
 
-  <p>Programmer &amp; Traveler</p>
+  <p><?php $this->content(); ?></p>
 
   <!-- footer -->
 <?php $this->need('footer.php'); ?>
 
   
 </div>
-
+</div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>

@@ -1,6 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
+
 <!--  #footer -->
 <div class="footer">
   <div class="footer-pic">
@@ -11,7 +12,40 @@
 		
 		<div class="footer-info">
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>" class="link"><?php $this->options->title(); ?></a>
+            
 		</div>
+        <div id="friends">
+            <a href="http://caisiduo.xyz/" class="link" target="_blank">CAISIDUO</a>
+            <i>/</i>
+            <a href="http://sqiu.me/" class="link" target="_blank">三秋</a>
+            <i>/</i>
+            <a href="http://fyzgxy.cn/" class="link" target="_blank">雷的窝</a>          
+            <i>/</i>
+            <a href="https://www.dreamwings.cn/" class="link" target="_blank">千千</a>
+            <i>/</i>
+            <a href="http://czduban.com/" class="link" target="_blank">以歌</a>
+            <i>/</i>
+            <a href="http://yufanboke.top/" class="link" target="_blank">yufan</a>          
+            <i>/</i>
+            <a href="https://hran.me/" class="link" target="_blank">hran</a>            		
+             <i>/</i>
+            <a href="https://mist.ink/" class="link" target="_blank">十四行詩</a>               
+        </div>
 </div>
 </div>
+
+    <script type="text/javascript">  
+    $(function () {  
+        $(".p-n-previous").each(function (i) {  
+            var divH = $(this).height();  
+            var $p = $("a", $(this)).eq(0);  
+            while ($p.outerHeight() > divH) {  
+                $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));  
+            };  
+        });  
+        });  
+    </script> 
+    
+    
+
 <?php $this->footer(); ?>

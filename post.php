@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-
+<div id="pjax-container">
 <div class="footer-clear post chinese">
 
   <!-- post header -->
@@ -27,8 +27,8 @@
     
 
     
-                <span class="p-n-previous">上一篇: <?php $this->theNext('%s','没有了'); ?></span>
-                <span class="p-n-next">下一篇: <?php $this->thePrev('%s','没有了'); ?></span>    
+                <span class="p-n-previous">上一篇：<?php $this->theNext('%s','没有了'); ?></span>
+                <span class="p-n-next">下一篇：<?php $this->thePrev('%s','没有了'); ?></span>    
 
   </div>
 
@@ -45,6 +45,6 @@
 
 
 </div>
-
+</div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>

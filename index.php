@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 1.1
+ * @version 1.2
  * @link http://www.ihewro.com
  */
 
@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
  
-
+ <div id="pjax-container">
 <div class="index">
 
 
@@ -49,8 +49,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 
   </div>
-
-
+</div>
 </div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>
+

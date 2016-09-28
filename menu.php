@@ -1,5 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<!-- menu -->
+
 <div id="menu" class="vertical-center-child menu">
   <a class="transition m-iterm" href="<?php $this->options->siteUrl(); ?>">home</a>
   <a class="transition m-iterm" href="<?php Helper::options()->siteUrl()?>/archive.html">archive</a>
@@ -10,5 +10,15 @@
 
 </div>
 
+ <script type="text/javascript">
+$(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])', {
+    container: '#pjax-container',
+    timeout: 8000
+}).on('pjax:complete',
+function() {
+	    setupContents();
+if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("http://www.ihewro.com/duoshuo/embedhw4.min.js"); }
+})
+</script>
 </body>
 </html>
