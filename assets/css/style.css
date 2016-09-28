@@ -423,7 +423,6 @@ div#friends .link {
 .p-n-sep ~ .p-n-next {
   right: 0;
   width: 45%;
-  height:auto;
 }
 
 .post-comment {
