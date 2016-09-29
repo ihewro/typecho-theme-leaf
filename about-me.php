@@ -9,7 +9,7 @@ $this->need('header.php'); ?>
 <div id="pjax-container">
 <div class="footer-clear vertical-center-child about">
 
-  <p><?php $this->content(); ?></p>
+  <div id="me-words"><?php $this->content(); ?></div>
 
   <!-- footer -->
 <?php $this->need('footer.php'); ?>

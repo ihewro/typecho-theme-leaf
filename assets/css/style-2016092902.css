@@ -684,8 +684,13 @@ a.social:hover {
 	font-size: 14px;
 }
 
-div#pjax-container {
+#pjax-container {
     height: 100%;
+}
+
+#me-words p {
+    text-align: center;
+	font-family: "Open Sans", "Microsoft YaHei", Arial, Verdana, sans-serif;
 }
 
 /* ==========================================================================

@@ -21,10 +21,12 @@
     <!-- 使用url函数转换相关路径 -->
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style-2016092901.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style-2016092902.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/solarized_dark.css'); ?>">
 <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/jquery.mCustomScrollbar.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/player.css'); ?>">
+
 
 
     <!-- fonts -->

@@ -1,4 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php if (!is_pjax()) { ?>
 
 <div id="menu" class="vertical-center-child menu">
   <a class="transition m-iterm" href="<?php $this->options->siteUrl(); ?>">home</a>
@@ -13,6 +14,58 @@
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/script.js'); ?>"></script>
 <script src='<?php $this->options->themeUrl('assets/js/nprogress.js'); ?>'></script>
 <link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/nprogress.css'); ?>'/>
+
+
+<!--Qpalyer author:https://32mb.space-->
+<div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/jquery.marquee.min.js'); ?>"></script>
+<script>
+	var	playlist = [
+{title:"晚安；）",artist:"性人盒",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/wanan.mp3",cover:"http://p4.music.126.net/nz1ZXXSYg85COLFURrJodw==/7975857349674458.jpg",},
+{title:"远山",artist:"末小皮",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/%E8%BF%9C%E5%B1%B1.mp3",cover:"http://p3.music.126.net/BceFKRe6K1aMsnu1QTFBYw==/8978611952438381.jpg",},
+];
+  var isRotate = true;
+  var autoplay = false;
+</script>
+<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/player.js'); ?>"></script>
+<script>
+
+function bgChange(){
+	var lis= $('.lib');
+	for(var i=0; i<lis.length; i+=2)
+	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+}
+window.onload = bgChange;
+</script>
+<!--Qpalyer end!-->
 
 <script>
 //pjax 刷新
@@ -31,5 +84,8 @@ if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.Em
 });
 </script>
 
+
+
 </body>
 </html>
+<?php } ?>
