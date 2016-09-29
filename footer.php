@@ -33,19 +33,6 @@
         </div>
 </div>
 </div>
-
-    <script type="text/javascript">  
-    $(function () {  
-        $(".p-n-previous").each(function (i) {  
-            var divH = $(this).height();  
-            var $p = $("a", $(this)).eq(0);  
-            while ($p.outerHeight() > divH) {  
-                $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));  
-            };  
-        });  
-        });  
-    </script> 
-    
     
 
 <?php $this->footer(); ?>
