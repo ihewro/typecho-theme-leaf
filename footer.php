@@ -1,6 +1,15 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
+<style>
+#friend-head,.footer-info{
+	display:inline;
+}
+p#friend-head{
+    cursor: pointer;
+	color: #7ebb8a;
+}
 
+</style>
 
 <!--  #footer -->
 <div class="footer">
@@ -14,6 +23,7 @@
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>" class="link"><?php $this->options->title(); ?></a>
             
 		</div>
+        <p id="friend-head">朋友们</p>
         <div id="friends">
             <a href="http://caisiduo.xyz/" class="link" target="_blank">CAISIDUO</a>
             <i>/</i>
@@ -33,6 +43,21 @@
         </div>
 </div>
 </div>
+
+<script>
+var $content = $("#friends");
+$content.hide();
+$(function(){
+$("#friend-head").bind("click",function(){
+	if($content.is(":visible")){
+		$content.fadeOut();
+	}
+	else{
+		$content.fadeIn();
+	}
+})
+});
+</script>
     
 
 <?php $this->footer(); ?>
