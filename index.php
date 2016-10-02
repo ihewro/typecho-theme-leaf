@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 2.0
+ * @version 2.1
  * @link http://www.ihewro.com
  */
 
@@ -23,7 +23,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <div id="screen">
 	<div id="mark">
  		<div class="layer" data-depth="0.20">
-               <img id="cover" src="http://isujin.com/wp-content/uploads/2016/09/wallhaven-373225.jpg" />
+               <img id="cover" src="<?php $this->options->indeximage(); ?>" />
 		</div>
 	</div>
 </div>
