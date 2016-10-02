@@ -25,9 +25,15 @@ p#friend-head{
 		</div>
         <p id="friend-head">朋友们</p>
         <div id="friends">
+            <a href="http://www.wecho.cc/" class="link" target="_blank">SNlone</a>
+            <i>/</i>
             <a href="http://caisiduo.xyz/" class="link" target="_blank">CAISIDUO</a>
             <i>/</i>
             <a href="http://sqiu.me/" class="link" target="_blank">三秋</a>
+            <i>/</i>
+            <a href="https://hran.me/" class="link" target="_blank">hran</a>  
+            <i>/</i>
+            <a href="http://techair.cc/" class="link" target="_blank">飞翔的技术宅</a>
             <i>/</i>
             <a href="http://fyzgxy.cn/" class="link" target="_blank">雷的窝</a>          
             <i>/</i>
@@ -35,11 +41,17 @@ p#friend-head{
             <i>/</i>
             <a href="http://czduban.com/" class="link" target="_blank">以歌</a>
             <i>/</i>
-            <a href="http://yufanboke.top/" class="link" target="_blank">yufan</a>          
-            <i>/</i>
-            <a href="https://hran.me/" class="link" target="_blank">hran</a>            		
+            <a href="http://yufanboke.top/" class="link" target="_blank">yufan</a>                    		
              <i>/</i>
-            <a href="https://mist.ink/" class="link" target="_blank">十四行詩</a>               
+             <a href="https://quericy.me/" class="link" target="_blank">quericy</a>                    		
+             <i>/</i>
+            <a href="https://mist.ink/" class="link" target="_blank">十四行詩</a>   
+            <i>/</i>
+            <a href="http://ryli.pw/" class="link" target="_blank">RY</a>      
+            <i>/</i>
+            <a href="https://blog.timelovelife.com/" class="link" target="_blank">Jackrabbit</a> 
+            <i>/</i>
+            <a href="http://www.4zen.top/" class="link" target="_blank">1900</a>          
         </div>
 </div>
 </div>

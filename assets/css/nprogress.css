@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-  background: #29d;
+      background-image: -webkit-linear-gradient(left,#F16F5C 0,#F16F5C 12.5%,#5B56DD 12.5%,#5B56DD 25%,#E15CED 25%,#E15CED 37.5%,#27E559 37.5%,#27E559 50%,#18C8C9 50%,#18C8C9 62.5%,#DC8987 62.5%,#DC8987 75%,#BB83D6 75%,#BB83D6 87.5%,#E774BD 87.5%,#E774BD 100%);
 
   position: fixed;
   z-index: 1031;
@@ -31,7 +31,7 @@
 }
 
 
-/* Remove these to get rid of the spinner */
+/* Remove these to get rid of the spinner 
 #nprogress .spinner {
   display: block;
   position: fixed;
@@ -73,4 +73,4 @@
   100% { transform: rotate(360deg); }
 }
 
-
+*/

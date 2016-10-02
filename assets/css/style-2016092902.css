@@ -176,9 +176,9 @@ figure {
 /* footer */
 .footer {
   position: absolute;    
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
-  height: 100px;
+  height: auto;
   width: 100%;
   text-align: center;
   color: #333;
@@ -204,7 +204,7 @@ figure {
 
 .footer-text {
   padding: 10px 0;
-  height: 40px;
+  height: auto;
 }
 
 .footer-info {
@@ -215,6 +215,9 @@ figure {
 div#friends .link {
     color: #666;
 }
+div#friends {
+    margin-top: 10px;
+}
 
 /* =======================
  * pages
@@ -223,10 +226,62 @@ div#friends .link {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #94e3d8 url("../img/banner.jpg") no-repeat fixed left top;
+   /* background: #94e3d8 url("../img/banner.jpg") no-repeat fixed left top;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+
+#preview {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: #fff;
+    left: 100%;
+    -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    overflow-y: scroll;
+}
+#preview.trans {
+    left: auto;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+}
+#preview.show {
+    left: 0;
+}
+#preview.trans.show {
+    left: auto;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+}
+
+
+.layer {
+    position: relative;
+}
+#cover {
+    position: absolute;
+    max-width: none;
+}
+#mark {
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+#screen {
+    position: relative;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .index-container {
@@ -664,24 +719,25 @@ input.text {
 a.social {
 	position: relative;
 	display: inline-block;
-	font-size: 16px;
 	margin: 0 12px;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
 	border: 0px solid;
 	border-color: #e4e4e4;
 	border-radius: 50%;
-	background:#fff;
-	color:#6f9a85;
+    background: rgba(255, 255, 255, 0.14);
+    color: #d9dedb;
 }
 
 a.social:hover {
-	background: #9BDB97;
+	background: rgba(255, 255, 255, 0.54);
+    color: #fff;
 }
 
 .fa{
-	font-size: 14px;
+	font-size: 27px;
+    line-height: 40px;
 }
 
 #pjax-container {

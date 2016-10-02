@@ -20,6 +20,10 @@
 <?php if (!is_pjax()) { ?>
     <!-- 使用url函数转换相关路径 -->
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+        // Fallback to loading jQuery from a local path if the CDN is unavailable
+        (window.jQuery || document.write('<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"><\/script>'));
+</script>
 <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style-2016092902.css'); ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/solarized_dark.css'); ?>">
@@ -35,6 +39,7 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+
 </head>
 <body class="loaded">
 

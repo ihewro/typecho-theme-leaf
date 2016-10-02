@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 1.3
+ * @version 2.0
  * @link http://www.ihewro.com
  */
 
@@ -13,9 +13,20 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
  
  <div id="pjax-container">
+ <style>
+ i.fa.fa-bars {
+    color: #fff;
+}
+ </style>
+ 
 <div class="index">
-
-
+<div id="screen">
+	<div id="mark">
+ 		<div class="layer" data-depth="0.20">
+               <img id="cover" src="http://isujin.com/wp-content/uploads/2016/09/wallhaven-373225.jpg" />
+		</div>
+	</div>
+</div>
   <div class="vertical-center-child index-container">
 
 
@@ -51,6 +62,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
   </div>
 </div>
 </div>
+
 <!-- menu -->
 <?php $this->need('menu.php'); ?>
 
