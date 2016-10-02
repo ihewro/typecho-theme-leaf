@@ -728,7 +728,10 @@ a.social {
 	border-radius: 50%;
     background: rgba(255, 255, 255, 0.14);
     color: #d9dedb;
-	font-size:27px;
+}
+
+.social .fa {
+    font-size: 27px;
 }
 
 a.social:hover {
