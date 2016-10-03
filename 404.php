@@ -15,7 +15,7 @@ if(!function_exists('getReadMode')) include_once('functions.php');
 <div id="screen">
 	<div id="mark">
  		<div class="layer" data-depth="0.20">
-               <img id="cover">
+               <img id="cover"/>
 		</div>
 	</div>
 </div>
