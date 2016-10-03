@@ -45,5 +45,4 @@ $("#friend-head").bind("click",function(){
 });
 </script>
     
-
 <?php $this->footer(); ?>

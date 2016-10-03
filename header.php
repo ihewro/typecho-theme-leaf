@@ -31,11 +31,10 @@
 <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/jquery.mCustomScrollbar.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/player.css'); ?>">
-
+<link rel="stylesheet" type="text/css" href="http://www.ihewro.com/zoom/css/zoom.css">
 
 
     <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet">
 
 
     <!-- 通过自有函数输出HTML头部信息 -->
