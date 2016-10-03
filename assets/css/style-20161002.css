@@ -745,7 +745,7 @@ a.social:hover {
 }
 
 #pjax-container {
-    height: 100%;
+    height: auto;
 }
 
 #me-words p {

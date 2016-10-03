@@ -71,24 +71,27 @@ window.onload = bgChange;
 
 <!--首页大图动态效果-->
 <script>
-var imageeffct = function() {
 
-    var coverjudge = function(id, w, h) {
+var Leaf ={
+ F: function(id, w, h) {
         var _height = $(id).parent().height(),
-        _width = $(id).parent().width(),
-        ratio = h / w;
+            _width = $(id).parent().width(),
+            ratio = h / w;
 
         if (_height / _width > ratio) {
-            id.style.height = _height + 'px';
-            id.style.width = _height / ratio + 'px';
+            id.style.height = _height +'px';
+            id.style.width = _height / ratio +'px';
         } else {
-            id.style.width = _width + 'px';
-            id.style.height = _width * ratio + 'px';
+            id.style.width = _width +'px';
+            id.style.height = _width * ratio +'px';
         }
 
-        id.style.left = (_width - parseInt(id.style.width)) / 2 + 'px';
-        id.style.top = (_height - parseInt(id.style.height)) / 2 + 'px';
-    };
+        id.style.left = (_width - parseInt(id.style.width)) / 2 +'px';
+        id.style.top = (_height - parseInt(id.style.height)) / 2 +'px';
+    }
+}
+var imageeffct = function() {
+
 
     var cover = {};
     cover.t = $('#cover');
@@ -131,15 +134,13 @@ var imageeffct = function() {
             cover.w = cover.t.width();
             cover.h = cover.t.height();
         }
-        coverjudge($('#cover')[0], cover.w, cover.h);
+                Leaf.F($('#cover')[0], cover.w, cover.h);
 
     })();
 
     $('#mark').parallax();
 }
-<?php if ($this->is('index')) : ?>
 imageeffct();
-<?php endif; ?>
 </script>
 
 
@@ -158,10 +159,30 @@ function() {
 function() {
 NProgress.done();
 imageeffct();
+//linkshow();
 if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("http://www.ihewro.com/duoshuo/embedhw4.min.js"); }
 });
+
 </script>
 
+<script>
+/*
+var $content = $("#friends");
+$content.hide();
+function linkshow(){
+$(function(){
+$("#friend-head").bind("click",function(){
+	if($content.is(":visible")){
+		$content.fadeOut();
+	}
+	else{
+		$content.fadeIn();
+	}
+})
+});
+}
+linkshow();*/
+</script>
 </body>
 </html>
 <?php } ?>

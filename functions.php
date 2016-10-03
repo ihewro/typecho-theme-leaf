@@ -39,6 +39,8 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 }
 
 
+
+
 // pjax判断
 
 function is_pjax(){   
