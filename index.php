@@ -63,6 +63,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 </div>
 
 </div>
+
 <!-- menu -->
 <?php $this->need('menu.php'); ?>
 
