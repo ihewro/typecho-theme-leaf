@@ -76,6 +76,7 @@ window.onload = bgChange;
 
 $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])', {
     container: '#pjax-container',
+	fragment: '#pjax-container',
     timeout: 8000
 }).on('pjax:send',
 function() {
