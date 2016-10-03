@@ -2,7 +2,18 @@
 <?php $this->need('header.php'); ?>
 
 <div id="pjax-container">
-
+<style>
+#screen{
+	display:none;
+}
+</style>
+<div id="screen">
+	<div id="mark">
+ 		<div class="layer" data-depth="0.20">
+               <img id="cover" src="http://isujin.com/wp-content/uploads/2016/04/wallhaven-212380.jpg" />
+		</div>
+	</div>
+</div>
 <div class="footer-clear post chinese">
 
   <!-- post header -->
