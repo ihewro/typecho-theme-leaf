@@ -91,56 +91,58 @@ var Leaf ={
         id.style.top = (_height - parseInt(id.style.height)) / 2 +'px';
     }
 }
-var imageeffct = function() {
 
 
-    var cover = {};
-    cover.t = $('#cover');
-    cover.w = cover.t.attr('width');
-    cover.h = cover.t.attr('height');
+function imageeffct(){
+	$(function() {
 
-    ; (cover.o = function() {
-        $('#mark').height(window.innerHeight)
-    })();
+        var cover = {};
+        cover.t = $('#cover');
+        cover.w = cover.t.attr('width');
+        cover.h = cover.t.attr('height');
 
-    ; (cover.f = function() {
+        ;(cover.o = function() {
+            $('#mark').height(window.innerHeight)
+        })();
 
-        var _w = $('#mark').width(),
-        _h = $('#mark').height(),
-        x,
-        y,
-        i,
-        e;
+ $("img").on('load', function() {
+	 ;(cover.f = function() {
 
-        e = (_w >= 1000 || _h >= 1000) ? 1000 : 500;
+                var _w = $('#mark').width(), _h = $('#mark').height(), x, y, i, e;
 
-        if (_w >= _h) {
-            i = _w / e * 50;
-            y = i;
-            x = i * _w / _h;
-        } else {
-            i = _h / e * 50;
-            x = i;
-            y = i * _h / _w;
-        }
+                e = (_w >= 1000 || _h >= 1000) ? 1000 : 500;
 
-        $('.layer').css({
-            'width': _w + x,
-            'height': _h + y,
-            'marginLeft': -0.5 * x,
-            'marginTop': -0.5 * y
-        })
+                if (_w >= _h) {
+                    i = _w / e * 50;
+                    y = i;
+                    x = i * _w / _h;
+                } else {
+                    i = _h / e * 50;
+                    x = i;
+                    y = i * _h / _w;
+                }
 
-        if (!cover.w) {
-            cover.w = cover.t.width();
-            cover.h = cover.t.height();
-        }
-                Leaf.F($('#cover')[0], cover.w, cover.h);
+                $('.layer').css({
+                    'width': _w + x,
+                    'height': _h + y,
+                    'marginLeft': - 0.5 * x,
+                    'marginTop': - 0.5 * y
+                })
 
-    })();
+                if (!cover.w) {
+                    cover.w = cover.t.width();
+                    cover.h = cover.t.height();
+                }
 
-    $('#mark').parallax();
+                Leaf.F($('#cover')[0], cover.w, cover.h)
+
+            })();
+			$('#mark').parallax();
+})
+
+});
 }
+
 imageeffct();
 </script>
 
