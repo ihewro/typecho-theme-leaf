@@ -14,9 +14,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  
  <div id="pjax-container">
  <style>
- i.fa.fa-bars {
-    color: #fff;
-}
+ #nav-menu i,#nav-menu:after,#nav-menu:before {
+ 	background-color: #fff;
+ }
  </style>
  
 <div class="index">
@@ -38,17 +38,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<i class="fa fa-github-alt"></i>
 			</a>
 		<?php endif; ?>
-		<?php if ($this->options->socialgoogle): ?>
-			<a class="social google-plus" target="blank" href="<?php $this->options->socialgoogle(); ?>">
-				<i class="fa fa-google-plus"></i>
+		<?php if ($this->options->socialmail): ?>
+			<a class="social envelope" target="blank" href="<?php $this->options->socialmail(); ?>">
+				<i class="fa fa-envelope"></i>
 			</a>
 		<?php endif; ?>
 			<a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/">
 				<i class="fa fa-rss"></i>
 			</a>
-		<?php if ($this->options->socialtwitter): ?>
-			<a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>">
-				<i class="fa fa-twitter"></i>
+		<?php if ($this->options->socialbook): ?>
+			<a class="social book" target="blank" href="<?php $this->options->socialbook(); ?>">
+				<i class="fa fa-book"></i>
 			</a>
 		<?php endif; ?>
 		<?php if ($this->options->socialweibo): ?>

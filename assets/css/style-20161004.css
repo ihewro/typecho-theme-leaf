@@ -76,8 +76,7 @@ code {
 }
 
 
-img {
-  display: block;
+#cover {
   margin: 0 auto;
   max-width: 100%;
 }
@@ -165,14 +164,38 @@ figure {
 }
 
 .menu-trigger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+	border-radius: 10%;
+	background: rgba(255, 255, 255, 0.14);
 }
 
+
+
+#nav-menu i,#nav-menu:after,#nav-menu:before {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    top: 14px;
+}
+#nav-menu:before {
+    top: 5px;
+    content: '';
+}
+#nav-menu:after {
+    top: 23px;
+    content: '';
+} 
+#nav-menu{
+    height: 21px;
+    width: 21px;
+    margin: 0 auto;
+}
 /* footer */
 .footer {
   position: absolute;    
@@ -279,7 +302,6 @@ div#friends {
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
 }

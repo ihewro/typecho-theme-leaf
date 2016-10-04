@@ -12,10 +12,10 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 	$form->addInput($socialweibo);
 	$socialgithub = new Typecho_Widget_Helper_Form_Element_Text('socialgithub', NULL, NULL, _t('输入GitHub链接'), _t('在这里输入GitHub链接,带http://'));
 	$form->addInput($socialgithub);
-	$socialtwitter = new Typecho_Widget_Helper_Form_Element_Text('socialtwitter', NULL, NULL, _t('输入Twitter链接'), _t('在这里输入twitter链接,带http://'));
-	$form->addInput($socialtwitter);
-	$socialgoogle = new Typecho_Widget_Helper_Form_Element_Text('socialgoogle', NULL, NULL, _t('输入Google +链接'), _t('在这里输入Google +链接,带http://'));
-	$form->addInput($socialgoogle);
+	$socialbook = new Typecho_Widget_Helper_Form_Element_Text('socialbook', NULL,'http://diary.ihewro.com/', _t('输入另一个博客的地址'), _t('在这里输入另一个博客链接,带http://'));
+	$form->addInput($socialbook);
+	$socialmail = new Typecho_Widget_Helper_Form_Element_Text('socialmail', NULL, 'mailto:ihewro@163.com', _t('输入邮箱地址'), _t('在这里输邮箱地址,如mailto:ihewro@163.com'));
+	$form->addInput($socialmail);
 	//首页图片
 	$indeximage = new Typecho_Widget_Helper_Form_Element_Text('indeximage', NULL, 'http://www.ihewro.com/pic/wall1.jpg', _t('输入图片地址'), _t('在这里输入首页大图地址，建议不超过1M'));
 	$form->addInput($indeximage);
