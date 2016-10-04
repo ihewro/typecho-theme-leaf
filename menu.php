@@ -16,6 +16,9 @@
 <link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/nprogress.css'); ?>'/>
 <script src='<?php $this->options->themeUrl('assets/js/jquery.parallax.js'); ?>'></script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/script.js'); ?>"></script>
+<link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/default.css'); ?>'/>
+<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/highlight.pack.js'); ?>"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
 
@@ -106,7 +109,8 @@ NProgress.done();
 imageeffct();
 //linkshow();
  setupContents();
- lue();
+lue();
+reHighlightCodeBlock();
 if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("http://www.ihewro.com/duoshuo/embedhw4.min.js"); }
 });
 

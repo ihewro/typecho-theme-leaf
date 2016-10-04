@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 2.2
+ * @version 2.3
  * @link http://www.ihewro.com
  */
 
@@ -51,17 +51,42 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<i class="fa fa-book"></i>
 			</a>
 		<?php endif; ?>
-		<?php if ($this->options->socialweibo): ?>
-			<a class="social weibo" target="blank" href="<?php $this->options->socialweibo(); ?>">
-				<i class="fa fa-weibo"></i>
+			<a class="social search" id="search-Button" target="blank" href="<?php $this->options->socialweibo(); ?>">
+				<i class="fa fa-search"></i>
 			</a>
-		<?php endif; ?>
+            <div class="site-search col-3 kit-hidden-tb">
+                <form id="search" method="post" action="./" role="search">
+                    <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
+                    <input id="search-text" type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
+                    <button type="submit" id="search-submit" class="submit fa fa-search"></button>
+                </form>
+            </div>
     </div>
 
 
   </div>
 </div>
+<script>
+//首页搜索
 
+
+	
+	var $searchbox = $("#search");
+	$searchbox.hide();
+$(function(){
+$("#search-Button").bind("click",function(event){
+	event.preventDefault();
+	if($searchbox.is(":visible")){
+		$searchbox.fadeOut(100);
+	}
+	else{
+		$searchbox.fadeIn(100);
+	}
+	
+});
+});
+
+</script>
 </div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>

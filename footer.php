@@ -30,7 +30,9 @@ p#friend-head{
 </div>
 </div>
 
+
 <script>
+//友情链接的样式
 var $content = $("#friends");
 $content.hide();
 $(function(){
@@ -43,6 +45,7 @@ $("#friend-head").bind("click",function(){
 	}
 })
 });
+
 </script>
     
 <?php $this->footer(); ?>

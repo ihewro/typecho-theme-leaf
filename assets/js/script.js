@@ -1,3 +1,11 @@
+//代码高亮
+        var reHighlightCodeBlock = function () {
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        };
+		
+		
 //首页大图动画效果
 var Leaf ={
  F: function(id, w, h) {
@@ -102,7 +110,7 @@ $(document).ready(function() {
 //超过div内容显示省略号
 var lue = function() {
 	$(function () {  
-        $(".p-n-previous").each(function (i) {  
+        $(".p-n-previous,.p-n-next").each(function (i) {  
             var divH = $(this).height();  
             var $p = $("a", $(this)).eq(0);  
             while ($p.outerHeight() > divH) {  
