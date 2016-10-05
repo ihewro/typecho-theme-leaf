@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* =======================
  * basic
  * ======================= */
@@ -21,23 +23,25 @@ body {
 }
 
 blockquote {
-  position: relative;
-  margin: 1em 0;
-  padding: 12px;
-  background: #f8f8f8;
-}
-
-blockquote:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -3px;
-  width: 3px;
-  height: 100%;
-  background-color: #6599ff;
+margin: 10px 0px;
+padding: 25px 40px;
+background: #F9F9F9;
+position: relative;
 }
 
 
+blockquote p {
+    margin: 5px 0!important;
+    line-height: 2.0em;
+}
+
+hr{
+    width: 30%;
+    height: 1px;
+    border: 0;
+    background: #EFEFEF;
+    margin: 20px 0;
+}
 
 .post-content pre {
 	display: block;
@@ -559,6 +563,10 @@ img {
    #comments
    ========================================================================== */
 /* comment */
+#comments h4 {
+  text-align: center;
+}
+
 .comment-submit
 {
     display: block;
