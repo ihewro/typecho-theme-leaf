@@ -133,6 +133,9 @@ $("#friend-head").bind("click",function(){
 }
 linkshow();*/
 </script>
+
+
+
 </body>
 </html>
 <?php } ?>

@@ -4,7 +4,7 @@
  * 
  * @package Leaf
  * @author ihewro
- * @version 2.3
+ * @version 2.4
  * @link http://www.ihewro.com
  */
 
@@ -86,6 +86,10 @@ $("#search-Button").bind("click",function(event){
 });
 });
 
+
+$(".index-title").click(function(){	
+	win_tips({title:'这是第1个彩蛋',text:'你开启了一扇秘密的门！一共5个彩蛋藏在整个网站里面┗|｀O′|┛ 嗷~~',duration:10000,icon:'fa fa-heart'});
+})
 </script>
 </div>
 <!-- menu -->

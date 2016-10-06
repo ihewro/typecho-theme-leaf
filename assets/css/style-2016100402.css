@@ -24,7 +24,7 @@ body {
 
 blockquote {
 margin: 10px 0px;
-padding: 25px 40px;
+padding: 5px 15px;
 background: #F9F9F9;
 position: relative;
 }
@@ -41,6 +41,13 @@ hr{
     border: 0;
     background: #EFEFEF;
     margin: 20px 0;
+}
+
+li {
+    margin: 20px 0px;
+}
+#playlist li {
+    margin: 0px;
 }
 
 .post-content pre {
@@ -971,4 +978,157 @@ a.social:hover {
 ::selection {
     background: #333;
     color: #FFF;
+}
+
+/*多说表情*/
+#ds-smilies-tooltip ul.ds-smilies-tabs {
+    display: none;
+}
+#ds-smilies-tooltip .ds-smilies-container {
+    padding: 15px 15px;
+    height: 200px;
+    margin-left: 0 !important;
+}
+#ds-smilies-tooltip .ds-smilies-container li {
+    width: auto;
+    max-width: 100px;
+    height: 40px !important;
+    margin: 0 7px;
+}
+#ds-smilies-tooltip .ds-smilies-container li img{
+	height:30px;
+}
+img.biaoqing, #ds-thread #ds-reset .ds-comment-body img.biaoqing {
+    display: inline;
+    margin: 0;
+    width: auto;
+    max-width: 6.25rem;
+}
+img.newpaopao, #ds-thread #ds-reset .ds-comment-body img.newpaopao {
+    margin-bottom: -0.25rem;
+    min-height: 1.875rem;
+    height: 1em;
+}
+img.alu, #ds-thread #ds-reset .ds-comment-body img.alu {
+    margin-bottom: -0.3125rem;
+    min-height: 2.0625rem;
+    height: 1em;
+}
+
+/*仿win10 弹窗*/
+#pop-box {
+	position: fixed;
+	width: 365px;
+	background: #1f1f1f;
+	right: -365px;
+	bottom: 10vh;
+	height: 75px;
+	color: #fff;
+	cursor: pointer;
+	z-index:100;
+}
+
+#pop-box-container {
+	padding: 5px 10px;
+	height: 65px
+}
+
+#pop-box-icons {
+	float: left;
+	width: 60px;
+	height: 60px;
+	padding: 10px
+}
+
+#pop-box-icons p {
+	width: 40px;
+	display: block;
+	font-size: 40px!important;
+	opacity: .7!important;
+	text-align: center;
+	margin: 3px 0px;
+}
+
+#pop-box-icons p:before {
+	font-size: inherit!important;
+	opacity: inherit!important
+}
+
+#pop-box-content {
+	float: left;
+	width: 265px;
+	height: 40px;
+	padding: 10px;
+}
+
+#pop-box-content p {
+	margin: 0;
+	padding: 0
+}
+
+#pop-box-content .secondary {
+	color: grey;
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 3px
+}
+
+#pop-box-close {
+	position: absolute;
+	right: 10px
+}
+
+
+.PopboxOut {
+	animation: PopboxOut cubic-bezier(0,.1,0,1) .4s forwards;
+	-moz-animation: PopboxOut cubic-bezier(0,.1,0,1) .4s forwards;
+	-webkit-animation: PopboxOut cubic-bezier(0,.1,0,1) .4s forwards;
+	-o-animation: PopboxOut cubic-bezier(0,.1,0,1) .4s forwards
+}
+
+.PopboxIn {
+	animation: PopboxIn cubic-bezier(0,.1,0,1) .4s forwards;
+	-moz-animation: PopboxIn cubic-bezier(0,.1,0,1) .4s forwards;
+	-webkit-animation: PopboxIn cubic-bezier(0,.1,0,1) .4s forwards;
+	-o-animation: PopboxIn cubic-bezier(0,.1,0,1) .4s forwards
+}
+
+@keyframes PopboxIn {
+	0% {
+		right: -365px
+	}
+
+	to {
+		right: 0
+	}
+}
+
+@-webkit-keyframes PopboxIn {
+	0% {
+		right: -365px
+	}
+
+	to {
+		right: 0
+	}
+}
+
+@keyframes PopboxOut {
+	to {
+		right: -365px
+	}
+
+	0% {
+		right: 0
+	}
+}
+
+@-webkit-keyframes PopboxOut {
+	to {
+		right: -365px
+	}
+
+	0% {
+		right: 0
+	}
 }

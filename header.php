@@ -42,7 +42,13 @@
 
 </head>
 <body class="loaded">
-
+<div id="pop-box">
+<div id="pop-box-container" >
+<div id="pop-box-icons" >
+<p class="icon-music"></p></div>
+<div id="pop-box-content"><p class="title"></p>
+<p class="secondary"></p></div>
+<div id="pop-box-close">X</div></div></div>
 <?php } ?>
 
     

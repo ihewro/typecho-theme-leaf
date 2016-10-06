@@ -120,3 +120,49 @@ var lue = function() {
         });  
 }
 lue();
+
+//仿win 10 弹窗
+	var win_tips_hide_timeout;
+	win_tips = function(parm) {
+		if(parm.duration == null) parm.duration = 10000;
+		if(parm.clkhd == null) parm.clkhd = false;
+		if(parm.act == null) parm.act = "show";
+		if(parm.title == null) parm.title = "";
+		if(parm.text == null) parm.text = "";
+		if(parm.act == "show"){
+			if($(".PopboxIn").length == 0){ //若无popbox在显示
+				$("#pop-box").removeClass("PopboxOut").addClass("PopboxIn");
+				$("#pop-box-icons p").removeClass().addClass(parm.icon);
+				$("#pop-box-content .title").html(parm.title);
+				$("#pop-box-content .secondary").html(parm.text);
+				if(!parm.clkhd) win_tips_hide_timeout = setTimeout(function(){win_tips({act:"hide",duration:parm.duration})},parm.duration);
+			}else{// 若已有popbox显示并且在执行隐藏计时器时先取消计时器并隐藏
+				clearTimeout(win_tips_hide_timeout);
+				$("#pop-box").removeClass("PopboxIn").addClass("PopboxOut");
+				setTimeout(function(){
+					$("#pop-box-icons p").removeClass().addClass(parm.icon);
+					$("#pop-box-content .title").html(parm.title);
+					$("#pop-box-content .secondary").html(parm.text);
+					$("#pop-box").removeClass("PopboxOut").addClass("PopboxIn");
+					if(!parm.clkhd) win_tips_hide_timeout = setTimeout(function(){win_tips({act:"hide",duration:parm.duration})},parm.duration);
+				},400);	
+			}	
+			$(document).on('click','#pop-box',function(){
+				win_tips({act:"hide"});
+			});
+			if(!parm.clkhd){
+				$(document).on('mouseenter','#pop-box',function(){
+					clearTimeout(win_tips_hide_timeout);
+				});
+				$(document).on('mouseleave','#pop-box',function(){
+					win_tips_hide_timeout = setTimeout(function(){win_tips({act:"hide",duration:parm.duration})},parm.duration);
+				});	
+			}else{
+				$(document).off('mouseenter','#pop-box');
+				$(document).off('mouseleave','#pop-box')	
+			}
+		}else{
+			$("#pop-box").removeClass("PopboxIn").addClass("PopboxOut");
+		}
+	}
+
