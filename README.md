@@ -18,10 +18,6 @@
 
 ![banner-pc2.png](http://www.ihewro.com/usr/uploads/2016/10/3724551346.png)
 <br>
-![www.ihewro.com-archives-333-(iPad).png](http://www.ihewro.com/usr/uploads/2016/10/1164815348.png)
-<br>
-![www.ihewro.com-(iPad).png](http://www.ihewro.com/usr/uploads/2016/10/1262057909.png)
-<br>
 
 
 ## 使用说明
