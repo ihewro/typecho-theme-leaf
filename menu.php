@@ -11,7 +11,6 @@
 <i></i>
 </div>
 </div>
-<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/jquery.mCustomScrollbar.concat.min.js'); ?>"></script>
 <script src='<?php $this->options->themeUrl('assets/js/nprogress.js'); ?>'></script>
 <link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/nprogress.css'); ?>'/>
 <script src='<?php $this->options->themeUrl('assets/js/jquery.parallax.js'); ?>'></script>
