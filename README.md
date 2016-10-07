@@ -1,3 +1,7 @@
+#Leaf
+![banner-pc2.png](http://www.ihewro.com/usr/uploads/2016/10/3724551346.png)
+
+
 ## 主题介绍
 
 第二款我的移植主题，原作者的主题（地址在这：http://liulang.co/ ）不适用在typecho上面。改的主要的部分是首页的动画效果，增加了一些效果（如搜索，pjax等），其他的页面效果与原作者基本一致。
@@ -16,8 +20,6 @@
 * 主题基本设置很简单，后台都已经做了设定。
 * 其他的自己去发现吧！
 
-![banner-pc2.png](http://www.ihewro.com/usr/uploads/2016/10/3724551346.png)
-<br>
 
 
 ## 使用说明
