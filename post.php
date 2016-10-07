@@ -43,7 +43,7 @@
                 <span class="p-n-next">下一篇：<?php $this->thePrev('%s','没有了'); ?></span>    
 
   </div>
-
+  
   <!-- disqus comment system -->
   
   <div class="post-comment">

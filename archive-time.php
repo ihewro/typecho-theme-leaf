@@ -35,14 +35,41 @@ $this->need('header.php'); ?>
 				            $year = $year_tmp;
 				            $output = '<h2 class="archive-year">'. $year .'</h2>';
 				        }
-				        $output .= '<a class="transition archive-iterm" href="'.$archives->permalink .'"><h3 class="archive-title">'. $archives->title .'</h3><p class="archive-date">'.date('F jS ',$archives->created).'</p></a>';
+				        $output .= '<li><a class="transition archive-iterm" href="'.$archives->permalink .'"><h3 class="archive-title">'. $archives->title .'</h3><p class="archive-date">'.date('F jS ',$archives->created).'</p></a></li>';
 				    endwhile;
 				    
 				    echo $output;
 				?>
   
   
+<div id="pager" class="showmore">
+<a href="http://ihewro.com"><span>全部文章</span></a>
+</div>
 
+<script>
+$(function(){//等待DOM加载完成
+
+
+var $category =  $("li:gt(<?php $this->options->archivenumber(); ?>)");
+$category.hide();
+
+var $toggleBtn = $('div.showmore >a');
+
+$toggleBtn.click(function(){
+	if($category.is(":visible"))
+	{
+		$category.hide();
+		$(this).find('span').text("全部文章");
+	}else{
+		$category.show();
+		$(this).find('span').text("部分文章");
+	}
+	
+	return false;
+});
+
+})
+</script>
   <!-- footer -->
     <?php $this->need('footer.php'); ?>
 

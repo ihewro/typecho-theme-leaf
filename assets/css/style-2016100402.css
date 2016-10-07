@@ -57,23 +57,26 @@ li {
 	width: auto;
 	font-size: 13px;
 	overflow: auto;
-    padding: 20px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-    background: url(http://www.ihewro.com/pic/pre.png) repeat top;
 }
 
 .post-content pre code {
-	color: #414141;
-	margin: 0;
-	font-size: 1em;
-	padding: 0;
-	background: 0;
-	border: 0;
-	white-space: inherit;
-	line-height: 20px;
+    line-height: 23px;
+    padding: 20px;
+    max-height: 400px;
+    display: block;
+    overflow-x: auto;
+    background: #002b36;
+    color: #839496;
 }
 
+pre ::-webkit-scrollbar {
+    display: none;
+}
+code ::-webkit-scrollbar {
+    display: none;
+}
 code {
 	font-family:"Microsoft YaHei";
 	color: #c7254e;
@@ -385,6 +388,32 @@ img {
   background-color: #f8f8f8;
 }
 
+.archive li {
+    margin: 0px;
+    list-style: none;
+}
+
+
+#pager {
+    text-align: center;
+    margin: 70px 0 0;
+    position: relative;
+}
+
+@media screen and (max-width: 780px){
+	#pager {
+    	margin: 30px 0 0;
+	}
+}
+#pager a {
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #666;
+    border: 1px solid #dadada;
+    padding: 10px 40px;
+    background: #fff;
+}
+
 .archive-title,
 .archive-date {
   margin: 0;
@@ -436,10 +465,15 @@ img {
 .post-title {
   margin: 0;
   padding-top: 40px;
-  line-height: 20px;
+  line-height: 25px;
       height: auto;
   font-family: "Microsoft YaHei", Arial, Verdana, sans-serif;
   font-size: 18px;
+}
+@media (max-width:599px){
+	.post-title {
+		    margin: 0px 30px;
+	}
 }
 
 .post-date {
@@ -530,17 +564,37 @@ img {
   color: #000;
 }
 
-.post-content h1 {
-  font-size: 18px;
+.post-content>*:first-child {
+    margin-top: 0 !important;
 }
 
+.post-content h1 {
+	font-size: 2em;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+.post-content h2 {
+	
+	font-size: 1.5em;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+.post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  font-size: 16px;
+	margin-bottom: 16px;
+    margin-top: 24px;
+	line-height: 1.25;
+	
 }
+
+
 
 .chinese .post-content {
   line-height: 24px;
@@ -913,65 +967,19 @@ a.social:hover {
    ========================================================================== */
 
 
+
 ::-webkit-scrollbar {
-	height: 8px;
-	width: 6px
+	width: 6px;
+	height: 6px
 }
 
-::-webkit-scrollbar-button {
-	height: 0;
-	width: 0
+::-webkit-scrollbar-track-piece {
+	background-color: transparent
 }
 
-::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement {
-	display: block
-}
-
-::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment {
-	display: none
-}
-
-::-webkit-scrollbar-thumb:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-track:vertical {
-	border-style: solid;
-	border-color: transparent
-}
-
-::-webkit-scrollbar-track:vertical::-webkit-scrollbar-track:horizontal {
-	background-clip: padding-box;
-	background-color: #fff
-}
-
-::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
-	background-clip: padding-box;
-	background-color: rgba(0,0,0,.5);
-	min-height: 28px;
-	padding-top: 100px
-}
-
-::-webkit-scrollbar-thumb:hover {
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,.25);
-	background-color: rgba(0,0,0,.4)
-}
-
-::-webkit-scrollbar-thumb:active {
-	-webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,.35);
-	background-color: rgba(0,0,0,.5)
-}
-
-::-webkit-scrollbar-thumb:horizontal,::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-track:horizontal,::-webkit-scrollbar-track:vertical {
-	border-width: 0
-}
-
-::-webkit-scrollbar-track:hover {
-	-webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
-	background-color: rgba(0,0,0,.05)
-}
-
-
-::-webkit-scrollbar-track:active {
-	-webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px -1px 0 rgba(0,0,0,.07);
-	background-color: rgba(0,0,0,.05)
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px;
+	background-color: #999;
 }
 
 
@@ -1131,4 +1139,16 @@ img.alu, #ds-thread #ds-reset .ds-comment-body img.alu {
 	0% {
 		right: 0
 	}
+}
+/*返回顶部按钮*/
+#gotop {
+    width: 70px;
+    height: 140px;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    top: auto;
+    display: block;
+    cursor: pointer;
+    background: url("http://www.ihewro.com/pic/top.png") no-repeat;
 }

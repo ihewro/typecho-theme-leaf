@@ -166,3 +166,21 @@ lue();
 		}
 	}
 
+//返回顶部
+	backTop=function (btnId){
+		var btn=document.getElementById(btnId);
+		var d=document.documentElement;
+		var b=document.body;
+		window.onscroll=set;
+		btn.onclick=function (){
+			btn.style.display="none";
+			window.onscroll=null;
+			this.timer=setInterval(function(){
+				d.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.03);
+				b.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.03);
+				if((d.scrollTop+b.scrollTop)==0) clearInterval(btn.timer,window.onscroll=set);
+			},10);
+		};
+		function set(){btn.style.display=(d.scrollTop+b.scrollTop>100)?'block':"none"}
+	};
+	backTop('gotop');

@@ -29,6 +29,8 @@ p#friend-head{
 </div>
 </div>
 
+<div style="display: none;" id="gotop"></div>
+
 
 <script>
 //友情链接的样式
@@ -51,20 +53,20 @@ $("#friend-head").bind("click",function(){
 
 
 $(".footer-pic").click(function(){	
-	win_tips({title:'这是第2个彩蛋',text:'告诉你一个秘密：我18岁，男生，想成为一个善良的人！喜欢可爱的东西',duration:10000,icon:'fa fa-heart'});
+	win_tips({title:'这是第2个彩蛋',text:'告诉你一个秘密：我18岁，男生，想成为一个善良的人！喜欢可爱的东西',duration:4000,icon:'fa fa-heart'});
 })
 
 $(".archive-year").click(function(){	
-	win_tips({title:'这是第3个彩蛋',text:'很有耐心哦，诺，给你我的一张照片：http://t.cn/RVZQ3Ga',duration:10000,icon:'fa fa-file-image-o'});
+	win_tips({title:'这是第3个彩蛋',text:'很有耐心哦，诺，给你我的一张照片：http://t.cn/RVZQ3Ga',duration:4000,icon:'fa fa-file-image-o'});
 })
 
 $("#egg4").click(function(){	
-	win_tips({title:'这是第4个彩蛋',text:'偷偷告诉你，我时常孤独，时常想起一个人，忧伤',duration:10000,icon:'fa fa-file-image-o'});
+	win_tips({title:'这是第4个彩蛋',text:'偷偷告诉你，我时常孤独，时常想起一个人，忧伤',duration:4000,icon:'fa fa-file-image-o'});
 })
 
 
 $("#me-words").click(function(){	
-	win_tips({title:'这是最后一个彩蛋',text:'5个彩蛋你都找到啦！如果想可以找我的QQ玩耍：535425690',duration:10000,icon:'fa fa-qq'});
+	win_tips({title:'这是最后一个彩蛋',text:'5个彩蛋你都找到啦！如果想可以找我的QQ玩耍：535425690',duration:4000,icon:'fa fa-qq'});
 })
 
 </script>
