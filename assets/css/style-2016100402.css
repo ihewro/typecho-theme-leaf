@@ -318,8 +318,12 @@ div#friends {
 }
 
 img {
-    max-width: 100%;
     height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .index-container {
@@ -489,7 +493,12 @@ img {
 .post-content {
   margin: 20px auto;
   padding: 20px;
-  font-family: "Microsoft YaHei", Arial, Verdana, sans-serif;
+  font-family:"Microsoft YaHei", Arial, Verdana, sans-serif;
+  color: #000;
+}
+
+.post-content img{
+	max-width:70%;
 }
 
 .post-nav {
@@ -570,14 +579,12 @@ img {
 
 .post-content h1 {
 	font-size: 2em;
-    font-weight: 400;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.3em;
 }
 .post-content h2 {
 	
 	font-size: 1.5em;
-    font-weight: 400;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.3em;
 }
@@ -588,16 +595,18 @@ img {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
+	font-weight: 600;
 	margin-bottom: 16px;
     margin-top: 24px;
 	line-height: 1.25;
+	font-family: "Microsoft Jhenghei";
 	
 }
 
 
 
 .chinese .post-content {
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .chinese .post-content p {
