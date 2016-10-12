@@ -157,6 +157,7 @@
 	position:relative;
 	max-height: 0;
 	overflow: hidden;
+	border: none!important;
 }
 #playlist li {
 	color:#989898;
@@ -167,6 +168,10 @@
 	text-overflow:ellipsis;
 	list-style-position:inside;
 	cursor:default;
+}
+
+li.lib {
+    display: block!important;
 }
 #playlist li:hover {
 	color:#716e6e;

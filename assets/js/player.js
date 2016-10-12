@@ -196,6 +196,7 @@
 		});
 	});
 
+$(function(){
 	$('#QPlayer .liebiao,#QPlayer .liebiao').on('click', function(){
 		var pl = $('#playlist');
 		if (pl.hasClass('go') === false) {
@@ -208,6 +209,8 @@
 			pl.removeClass('go');
 		}
 	});		
+});
+	
 
 	$("#QPlayer .ssBtn").on('click', function(){
 		var mA = $("#QPlayer");

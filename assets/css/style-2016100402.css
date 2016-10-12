@@ -320,10 +320,6 @@ div#friends {
 img {
     height: auto;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
 }
 
 .index-container {
@@ -499,6 +495,10 @@ img {
 
 .post-content img{
 	max-width:70%;
+ 	margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .post-nav {
@@ -532,7 +532,6 @@ img {
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
-  font-family:Georgia, Times New Roman, serif;
   font-size: 14px;
   color: #6599ff;
   cursor:text;
