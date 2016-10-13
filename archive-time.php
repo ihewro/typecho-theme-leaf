@@ -41,35 +41,6 @@ $this->need('header.php'); ?>
 				    echo $output;
 				?>
   
-  
-<div id="pager" class="showmore">
-<a href="http://ihewro.com"><span>全部文章</span></a>
-</div>
-
-<script>
-$(function(){//等待DOM加载完成
-
-
-var $category =  $("li:gt(<?php $this->options->archivenumber(); ?>)");
-$category.hide();
-
-var $toggleBtn = $('div.showmore >a');
-
-$toggleBtn.click(function(){
-	if($category.is(":visible"))
-	{
-		$category.hide();
-		$(this).find('span').text("全部文章");
-	}else{
-		$category.show();
-		$(this).find('span').text("部分文章");
-	}
-	
-	return false;
-});
-
-})
-</script>
   <!-- footer -->
     <?php $this->need('footer.php'); ?>
 

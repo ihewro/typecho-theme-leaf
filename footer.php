@@ -29,8 +29,6 @@ p#friend-head{
 </div>
 </div>
 
-<div style="display: none;" id="gotop"></div>
-
 
 <script>
 //友情链接的样式
@@ -66,7 +64,7 @@ $("#egg4").click(function(){
 
 
 $("#me-words").click(function(){	
-	win_tips({title:'这是最后一个彩蛋',text:'5个彩蛋你都找到啦！如果想可以找我的QQ玩耍：535425690',duration:4000,icon:'fa fa-qq'});
+	win_tips({title:'这是最后一个彩蛋',text:'5个彩蛋你都找到啦！爱你（づ￣3￣）づ╭❤～',duration:4000,icon:'fa fa-qq'});
 })
 
 </script>

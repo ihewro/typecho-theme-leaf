@@ -19,9 +19,6 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 	$indeximage = new Typecho_Widget_Helper_Form_Element_Text('indeximage', NULL, 'http://www.ihewro.com/pic/wall1.jpg', _t('输入图片地址'), _t('在这里输入首页大图地址，建议不超过1M'));
 	$form->addInput($indeximage);
 	
-	//归档页面显示数目
-	$archivenumber = new Typecho_Widget_Helper_Form_Element_Text('archivenumber', NULL, '20', _t('输入数字'), _t('在这里输入归档页面部分显示的数目减去一的值'));
-	$form->addInput($archivenumber);
 	
 	//底部友链HTML代码
 	$links = new Typecho_Widget_Helper_Form_Element_Textarea('links', NULL,'<a href="http://www.wecho.cc/" class="link" target="_blank">SNlone</a><i>/</i>
