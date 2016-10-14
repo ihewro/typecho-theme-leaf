@@ -393,7 +393,7 @@ img {
     list-style: none;
 }
 
-/*隐藏部分文章按钮css
+
 #pager {
     text-align: center;
     margin: 70px 0 0;
@@ -413,7 +413,7 @@ img {
     padding: 10px 40px;
     background: #fff;
 }
-*/
+
 .archive-title,
 .archive-date {
   margin: 0;
@@ -598,14 +598,14 @@ img {
 	margin-bottom: 16px;
     margin-top: 24px;
 	line-height: 1.25;
-	font-family: "Microsoft Jhenghei";
+	font-family: "Microsoft YaHei";
 	
 }
 
 
 
 .chinese .post-content {
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .chinese .post-content p {

@@ -27,7 +27,7 @@
         (window.jQuery || document.write('<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"><\/script>'));
 </script>
 <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style-2016100402.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/player.css'); ?>">
 <link rel="stylesheet" type="text/css" href="http://www.ihewro.com/zoom/css/zoom.css">
