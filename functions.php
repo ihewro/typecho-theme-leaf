@@ -36,6 +36,11 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 <a href="https://blog.timelovelife.com/" class="link" target="_blank">Jackrabbit</a><i>/</i>
 <a href="http://www.4zen.top/" class="link" target="_blank">1900</a>', _t('友链样式的HTML代码'), _t('填入你的HTML代码'));
 	$form->addInput($links);
+	
+	//播放器音乐
+	$musiclist = new Typecho_Widget_Helper_Form_Element_Textarea('musiclist', NULL,'{title:"晚安；）",artist:"性人盒",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/wanan.mp3",cover:"http://p4.music.126.net/nz1ZXXSYg85COLFURrJodw==/7975857349674458.jpg",},
+{title:"远山",artist:"末小皮",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/%E8%BF%9C%E5%B1%B1.mp3",cover:"http://p3.music.126.net/BceFKRe6K1aMsnu1QTFBYw==/8978611952438381.jpg",},', _t('音乐播放器的音乐列表'), _t('根据已给的格式填入你的HTML代码'));
+	$form->addInput($musiclist);
 
 }
 

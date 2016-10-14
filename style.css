@@ -23,10 +23,11 @@ body {
 }
 
 blockquote {
-margin: 10px 0px;
-padding: 5px 15px;
-background: #F9F9F9;
-position: relative;
+    margin: 10px 0px;
+    padding: 5px 15px;
+    background: #002b36;
+    position: relative;
+    color: #839496;
 }
 
 
@@ -494,7 +495,7 @@ img {
 }
 
 .post-content img{
-	max-width:70%;
+	max-width:100%;
  	margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
