@@ -13,7 +13,9 @@
 </div>
 <script src='<?php $this->options->themeUrl('assets/js/nprogress.js'); ?>'></script>
 <link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/nprogress.css'); ?>'/>
+<?php if (!empty($this->options->indexsetup) && in_array('IndexImage', $this->options->indexsetup)): ?>
 <script src='<?php $this->options->themeUrl('assets/js/jquery.parallax.js'); ?>'></script>
+<?php endif; ?>
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/script.js'); ?>"></script>
 <link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/solarized-dark.css'); ?>'/>
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/highlight.pack.js'); ?>"></script>
@@ -57,7 +59,7 @@
   var isRotate = true;
   var autoplay = false;
 </script>
-<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/player.js'); ?>"></script>
+<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/player.min.js'); ?>"></script>
 <script>
 
 function bgChange(){
@@ -72,7 +74,7 @@ window.onload = bgChange;
 
 <!--灯箱zoom.js-->
 <script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="http://www.ihewro.com/zoom/dist/zoom.min.js" type="text/javascript"></script>
+<script src="<?php $this->options->themeUrl('assets/js/zoom.min.js') ?>" type="text/javascript"></script>
 <script type="text/javascript">
         var setupContents = function () {
             $(".post-content img:not(article .link-box img, img[no-zoom])").each(function() {
@@ -101,12 +103,13 @@ function() {
 }).on('pjax:complete',
 function() {
 NProgress.done();
-imageeffct();
-//linkshow();
  setupContents();
 lue();
 reHighlightCodeBlock();
-if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("http://www.ihewro.com/duoshuo/embedhw4.min.js"); }
+repogithub();
+<?php if ($this->options->duoshuosn){ ?>
+if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedhw4.js') ?>"); }
+<?php };?>
 });
 
 </script>

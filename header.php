@@ -27,10 +27,17 @@
         (window.jQuery || document.write('<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"><\/script>'));
 </script>
 <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<?php if ($this->options->duoshuosn){ ?>
+<?php if ( $this->options->duoshuoStyleswitch =='0' ) : ?>
+<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/duoshuo-disqus.min.css'); ?>">
+<?php elseif($this->options->duoshuoStyleswitch == '1'): ?>
+<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/duoshuo-qingjianyue.css'); ?>">
+<?php endif; ?>
+<?php };?>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/player.css'); ?>">
-<link rel="stylesheet" type="text/css" href="http://www.ihewro.com/zoom/css/zoom.css">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/zoom.css') ?>">
 
 
     <!-- fonts -->
@@ -49,6 +56,3 @@
 <p class="secondary"></p></div>
 <div id="pop-box-close">X</div></div></div>
 <?php } ?>
-
-    
-    

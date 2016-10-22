@@ -4,80 +4,6 @@
                 hljs.highlightBlock(block);
             });
         };
-		
-		
-//首页大图动画效果
-var Leaf ={
- F: function(id, w, h) {
-        var _height = $(id).parent().height(),
-            _width = $(id).parent().width(),
-            ratio = h / w;
-
-        if (_height / _width > ratio) {
-            id.style.height = _height +'px';
-            id.style.width = _height / ratio +'px';
-        } else {
-            id.style.width = _width +'px';
-            id.style.height = _width * ratio +'px';
-        }
-
-        id.style.left = (_width - parseInt(id.style.width)) / 2 +'px';
-        id.style.top = (_height - parseInt(id.style.height)) / 2 +'px';
-    }
-}
-var imageeffct = function(){
-	$(function() {
-
-        var cover = {};
-        cover.t = $('#cover');
-        cover.w = cover.t.attr('width');
-        cover.h = cover.t.attr('height');
-
-        ;(cover.o = function() {
-            $('#mark').height(window.innerHeight)
-        })();
-        if (cover.t.prop('complete')) {
-            // why setTimeout ?
-            setTimeout(function() { cover.t.load() }, 0)
-        }
-cover.t.on('load', function() {
-	 ;(cover.f = function() {
-
-                var _w = $('#mark').width(), _h = $('#mark').height(), x, y, i, e;
-
-                e = (_w >= 1000 || _h >= 1000) ? 1000 : 500;
-
-                if (_w >= _h) {
-                    i = _w / e * 50;
-                    y = i;
-                    x = i * _w / _h;
-                } else {
-                    i = _h / e * 50;
-                    x = i;
-                    y = i * _h / _w;
-                }
-
-                $('.layer').css({
-                    'width': _w + x,
-                    'height': _h + y,
-                    'marginLeft': - 0.5 * x,
-                    'marginTop': - 0.5 * y
-                })
-
-                if (!cover.w) {
-                    cover.w = cover.t.width();
-                    cover.h = cover.t.height();
-                }
-
-                Leaf.F($('#cover')[0], cover.w, cover.h)
-
-            })();
-			$('#mark').parallax();
-})
-
-});
-}
-imageeffct();
 
 // 目录的按钮
 $(document).ready(function() {
@@ -164,4 +90,7 @@ lue();
 		}else{
 			$("#pop-box").removeClass("PopboxIn").addClass("PopboxOut");
 		}
-	}
+	};
+
+	console.log('\n %c theme Leaf v2.7 %c by友人C<ihewro.com> 2016/010/19 \n\n','color:#444;background:#eee;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#eee;background:#444;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+/*希望使用本主题能够保留本行注释QWQ*/

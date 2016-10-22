@@ -9,7 +9,7 @@
 	bottom:20px;
 	left:-250px;
 	transition:transform .5s ease;
-	    z-index: 80;
+	z-index: 80;
 }
 #QPlayer .left {
 	float:left;

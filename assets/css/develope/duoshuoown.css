@@ -1,0 +1,685 @@
+@charset "utf-8";
+/*自定义css*/
+.fa-edge,.fa-chrome,.fa-globe,.fa-firefox,.fa-weixin,.fa-safari,.fa-opera,.fa-internet-explorer,.fa-windows,.fa-android,.fa-desktop,.fa-linux,.fa-apple,.fa-mobile:before{
+	margin-right:4px;
+  width: 14px!important;
+    height: 14px!important;
+	color:rgba(96,95,95,1.00);
+}
+
+span.ua{
+	margin-right:5px!important;
+	color:rgba(96,95,95,1.00);
+}
+
+img.alu, #ds-thread #ds-reset .ds-comment-body img.alu {
+    margin-bottom: -0.3125rem;
+    min-height: 2.0625rem;
+    height: 1em;
+}
+img.paopao,#ds-thread #ds-reset .ds-comment-body img.paopao {
+	margin-bottom: -0.25rem;
+	min-height: 1.875rem;
+	height: 1em
+}
+
+#ds-thread #ds-reset .ds-post-toolbar {
+    box-shadow: none;
+}
+
+/*0.自己*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id='574993']:after{
+    content:"博主";
+    margin-left:6px;
+    font-size:12px;
+    color:#70ca62;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    -webkit-animation:my-face 5s infinite ease-in-out;
+    animation:my-face 5s infinite ease-in-out;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+
+/*1.SNlone's Blog*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id='13566631']:after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*2.三秋*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id='7550406']:after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*3.CSD*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="6272634163120046849"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*4.hran*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="11784750"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*5.飞翔的技术宅*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="8509758"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+
+/*7.lexus*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="6319687821447660289"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*8.yufan*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="13113934"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+/*9.千千*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="6258059853583876866"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+
+/*10.Ser0x4's Blog*/
+#ds-thread #ds-reset a.ds-user-name[data-user-id="10161180"]::after{
+	font: normal normal normal 14px/1 FontAwesome;
+    content: "\f058";
+    margin-left:6px;
+    color:#307ab9;
+    border-radius:4px;
+    padding:0px 3px 0px 0px;
+    display:inline-block;
+    margin:0px 0px 0px 5px;
+
+}
+
+ .ds-post-repost, .ds-post-report {
+    display: none!important;
+}
+
+#ds-thread #ds-reset ul.ds-comments-tabs .ds-service-icon {
+    display:none;
+
+}
+
+
+/*被顶上去的评论优化开始*/
+/*被顶上去的评论优化结束*/
+
+/*表情框处理开始*/
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-emote,#ds-thread #ds-reset .ds-toolbar-button.ds-add-image {
+    display: inline-block;
+    background: 0;
+    margin-top: 7px
+}
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-emote:before {
+    font: normal normal normal 20px/1 FontAwesome;
+    content: "\f118";
+    color: #000000;
+    opacity: 0.65
+    
+}
+#ds-thread #ds-reset .ds-toolbar-button:hover {
+    opacity: 1
+}
+
+#ds-smilies-tooltip .ds-smilies-container li img {
+    visibility: visible
+}
+
+#ds-smilies-tooltip .ds-smilies-container li:hover {
+    position: relative;
+    top: -1px
+}
+
+#ds-smilies-tooltip {
+    border: 1px solid #aaa;
+    position: absolute;
+    max-width: 400px;
+    min-width: 200px;
+    width: -webkit-calc(100% - 130px);  /* WebKit 536.3 (Chrome 19) and above, experimental */
+    width:         calc(100% - 130px);  /* final CSS3 compliant implementation; Firefox 16 and IE 9, and above */
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    text-shadow: 0 1px 0 #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+
+#ds-smilies-tooltip ul.ds-smilies-tabs {
+    display: none;
+}
+#ds-smilies-tooltip .ds-smilies-container {
+    padding: 15px 15px;
+    height: 200px;
+    margin-left: 0 !important;
+}
+#ds-smilies-tooltip .ds-smilies-container li {
+    width: auto;
+    max-width: 100px;
+    height: 40px !important;
+    margin: 0 7px;
+} 
+
+#ds-smilies-tooltip {
+    border: 0;
+    box-shadow: 2px 11px 22px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 2px 11px 22px rgba(0,0,0,0.27)
+}
+
+#ds-smilies-tooltip .ds-smilies-container {
+    -webkit-overflow-scrolling: touch
+}
+
+@supports(-webkit-backdrop-filter:brightness(150%) blur(30px)) or(backdrop-filter:brightness(150%) blur(30px)) {
+    #ds-smilies-tooltip {
+        background-color: rgba(255,255,255,0.3);
+        -webkit-backdrop-filter: brightness(150%) blur(30px);
+        backdrop-filter: brightness(150%) blur(30px)
+    }
+}
+
+/*表情框处理结束*/
+
+/*waiting 按钮处理开始*/
+
+
+#ds-indicator:before {
+    font: normal normal normal 18px/1 FontAwesome;
+    content: "\f110"
+}
+
+#ds-indicator {
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    background: #333 none;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #333;
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear
+}
+
+/*waiting 按钮处理结束*/
+
+/*用户信息卡片气泡开始*/
+#ds-thread #ds-reset #ds-bubble {
+    position: absolute;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    border:0px;
+    border-radius: 5px;
+    padding: 20px 25px;
+    color: #333;
+    box-shadow: 2px 11px 22px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 2px 11px 22px rgba(0,0,0,0.27);
+    z-index: 9999;
+    font-size: 13px
+}
+/*用户信息卡片气泡结束*/
+
+/*设置框*/
+#ds-thread #ds-reset .ds-account-control ul {
+    background: #fff;
+    box-shadow: inset 0 1px 1px #fff,0 1px 1px rgba(0,0,0,0.27);
+    border: 0
+}
+
+#ds-thread #ds-reset .ds-account-control ul li a {
+    padding: 7px 10px;
+    border-bottom-color: #efefef;
+    color: #2c2a2a
+}
+
+#ds-thread .ds-account-control ul,#ds-thread .ds-account-control ul li {
+    width: 90px
+}
+/*设置框结束*/
+
+#ds-reset .ds-avatar {
+    background:none !important;
+    box-shadow:none !important;
+}
+#ds-reset .ds-avatar img,#ds-thread #ds-reset ul.ds-children .ds-avatar img {
+    width:35px !important;
+    height:35px !important;
+    -webkit-transition:.8s;
+    -moz-transition:.8s;
+    -o-transition:.8s;
+    -ms-transition:.8s;
+    padding:3px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+.ds-post:hover .ds-avatar img {
+    transform:rotate(720deg);
+    -webkit-transform:rotate(720deg);
+    -moz-transform:rotate(720deg);
+    -o-transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    border-radius:30px !important;
+}
+#ds-bubble img {
+    margin-top: 0px!important;
+}
+#ds-reset .ds-avatar img:hover {
+    transform:rotate(720deg);
+    -webkit-transform:rotate(720deg);
+    -moz-transform:rotate(720deg);
+    -o-transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    border-radius:30px !important;
+}
+
+#ds-reset .ds-avatar img
+{
+     margin-top: 15px;
+}
+
+#ds-recent-visitors .ds-avatar {float:left}/*最新访客样式：横排*/
+#ds-recent-visitors .ds-avatar img{   
+    max-width: 100%;
+    width:54px;height:54px; /*设置图像的长和宽，这里要根据自己的评论框情况更改*/  
+    border-radius: 27px;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/  
+    -webkit-border-radius: 27px;/*圆角效果：兼容webkit浏览器*/  
+    -moz-border-radius:27px;   
+    box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/  
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;   
+    -webkit-transition: 0.4s;      
+    -webkit-transition: -webkit-transform 0.4s ease-out;   
+    transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/  
+    -moz-transition: -moz-transform 0.4s ease-out;   
+}    
+#ds-recent-visitors .ds-avatar img:hover{/*设置鼠标悬浮在头像时的CSS样式*/  
+    box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);   
+    -webkit-box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);   
+    transform: rotateZ(360deg);/*图像旋转360度*/  
+    -webkit-transform: rotateZ(360deg);   
+    -moz-transform: rotateZ(360deg);   
+}
+/*以上是对头像的处理*/
+
+
+#ds-reset .ds-highlight {
+    color: #C76666!important;
+}/*名称的颜色*/
+#ds-thread #ds-reset .ds-comment-footer {
+    text-align: right;
+}
+
+#ds-thread #ds-reset #ds-hot-posts {border:0}
+#ds-reset #ds-hot-posts .ds-gradient-bg {background:none;}
+#ds-thread #ds-reset li.ds-post,#ds-thread #ds-reset #ds-hot-posts {overflow:visible}
+
+#ds-thread #ds-reset .ds-post-button {
+    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    position: absolute;
+    width: 100px;
+    text-shadow: none;
+    font-weight: normal;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border: 1px solid #ededed;
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+    outline: none;
+}
+#ds-thread #ds-reset .ds-post-button:hover {
+    color:#FFF;
+    background-color:#484848;
+    background-image:none;
+}
+#ds-thread #ds-reset .ds-post-button:hover {
+    background-position:0 -15px;
+    color:#fff;
+}
+
+/*评论框*/
+     
+#ds-thread {
+    margin: 0px 0px;
+}
+    #ds-thread #ds-reset .ds-textarea-wrapper {
+    position:relative;
+        border: 1px solid #ececec!important;
+    padding-right:20px;
+    overflow:hidden;
+    height:120px;
+}
+#ds-thread #ds-reset .ds-post-options {
+    border:0px;
+    border-right:0;
+    border-bottom-left-radius:0;
+    -webkit-border-bottom-left-radius:0;
+    background:transparent;
+    margin-top:12px;
+}
+
+#ds-thread #ds-reset .ds-comment-body,#ds-thread #ds-reset ul.ds-children .ds-comment-body {
+    padding-left:70px !important;
+}
+#ds-thread #ds-reset .ds-comment-body,#ds-thread #ds-reset ul.ds-children .ds-comment-body {
+    padding-left:70px !important;
+}
+
+#ds-thread #ds-reset ul.ds-children .ds-avatar {
+    width:50px !important;
+}
+#ds-thread #ds-reset .ds-replybox {
+    padding:0 0 0 80px !important;
+}
+#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-body {
+    margin-left:68px !important;
+}
+#ds-recent-comments li.ds-comment:nth-of-type(1) {
+    border:none !important;
+}
+.ds-sync {
+    display:none !important;
+}
+#ds-thread #ds-reset .ds-sort {
+    display:none;
+}
+span.ds-highlight {
+    font-size: 28px!important;
+}
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+    background: none;
+    padding: 10px;
+    color: #000;
+text-shadow: none;
+border:none;
+    font-size: 20px;
+}
+#ds-thread #ds-reset .ds-powered-by {
+    display:none;
+}
+
+/***************************其它*************************/
+
+#ds-wrapper #ds-reset .ds-dialog-footer {
+    display:none;
+}
+#ds-wrapper #ds-reset button {
+    cursor: pointer;
+    color: #555;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(25%, #fff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(#fff, #fff 25%, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #fff, #fff 25%, #e6e6e6);
+    background-image: -ms-linear-gradient(#fff, #fff 25%, #e6e6e6);
+    background-image: linear-gradient(#fff, #fff 25%, #e6e6e6);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    border: 1px solid #aaa;
+    display: inline-block;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    padding: 0
+}
+
+#ds-wrapper #ds-reset button:hover {
+    background-position: 0 -15px;
+    color: #333
+}
+
+#ds-wrapper #ds-reset button:active {
+    top: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05)
+}/*分享页面设置*/
+#ds-thread #ds-reset .ds-replybox {
+    margin-top:10px;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea,#ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
+    font-family:Verdana,Geneva,"Microsoft Yahei","Heiti SC Light",sans-serif;
+    height: 120px;
+}
+
+/*/*未读消息气泡开始*/
+#ds-notify{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    border: 0px;
+    opacity: 0.7;
+    min-height: 0px;
+    background: transparent url("http://7xlk7n.com1.z0.glb.clouddn.com/message2.jpg") no-repeat scroll center center / 136px;
+    background-color: #FAFCF9;
+    transition: all .2s ease-in;
+}
+
+
+#ds-notify:hover{
+    opacity:1;
+    min-height: 120px;
+}
+
+#ds-notify #ds-reset .ds-logo {
+    margin-top: 5px;
+}
+
+#ds-notify #ds-reset ul.ds-notify-unread li a {
+    color:#fff;
+    text-decoration:none;
+}/*未读消息气泡中的字体设置*/
+/*未读消息气泡结束*/
+
+#ds-wrapper #ds-reset .ds-unread-list li a {
+    color:#017cb9;
+}
+#ds-wrapper #ds-reset .ds-unread-list li,#ds-wrapper #ds-reset h2,#ds-wrapper #ds-reset .ds-control-group label {
+    color:#555;
+}
+#ds-wrapper #ds-reset .ds-dialog-inner {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),1px 3px 7px 0 rgba(0,0,0,.12),0 0 20px 5px rgba(0,0,0,.12);
+    border: 0;
+    background: #fff;
+    border-radius: 5px
+}
+
+
+/*分页页码按钮处理开始*/
+#ds-thread #ds-reset .ds-comments, #ds-thread #ds-reset .ds-paginator {
+    border-bottom: none;
+}
+
+#ds-thread #ds-reset .ds-comments, #ds-thread #ds-reset .ds-paginator {
+        border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 99px;
+}
+#ds-thread #ds-reset .ds-paginator {
+    margin-bottom: 10px!important;
+}
+
+#ds-thread #ds-reset .ds-paginator .ds-current {
+    border: 0!important;
+    border-radius: 50%!important;
+    box-shadow: 1px 1px 5px #ddd;
+    background: #fff!important;
+}
+
+#ds-thread #ds-reset .ds-paginator a {
+    font-size: 12px;
+    margin: 0 3px;
+    padding: 10px 14px!important;
+    border: 0px solid transparent!important;
+    border-radius: 50%!important;
+}
+
+#ds-thread #ds-reset .ds-paginator a:hover {
+    background: #fff!important;
+    color: #ff95b8!important;
+}
+
+/*分页页码按钮处理结束*/
+#ds-wrapper #ds-reset .ds-unread-list li a[rel~="author"] {
+    color:#555;
+}
+#ds-thread #ds-reset ul.ds-children .ds-post-self:hover {
+    border-left:1px solid rgba(0,0,0,.4);
+}
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    height:120px;
+}
+
+#ds-thread #ds-reset .ds-post-self {
+    border-top:none;
+}
+@-webkit-keyframes my-face{2%,24%,80%{-webkit-transform:translate(0,1.5px) rotate(1.5deg);transform:translate(0,1.5px) rotate(1.5deg)}
+4%,68%,98%{-webkit-transform:translate(0,-1.5px) rotate(-.5deg);transform:translate(0,-1.5px) rotate(-.5deg)}
+38%,6%{-webkit-transform:translate(0,1.5px) rotate(-1.5deg);transform:translate(0,1.5px) rotate(-1.5deg)}
+8%,86%{-webkit-transform:translate(0,-1.5px) rotate(-1.5deg);transform:translate(0,-1.5px) rotate(-1.5deg)}
+10%,72%{-webkit-transform:translate(0,2.5px) rotate(1.5deg);transform:translate(0,2.5px) rotate(1.5deg)}
+12%,64%,78%,96%{-webkit-transform:translate(0,-.5px) rotate(1.5deg);transform:translate(0,-.5px) rotate(1.5deg)}
+14%,54%{-webkit-transform:translate(0,-1.5px) rotate(1.5deg);transform:translate(0,-1.5px) rotate(1.5deg)}
+16%{-webkit-transform:translate(0,-.5px) rotate(-1.5deg);transform:translate(0,-.5px) rotate(-1.5deg)}
+18%,22%{-webkit-transform:translate(0,.5px) rotate(-1.5deg);transform:translate(0,.5px) rotate(-1.5deg)}
+20%,36%,46%{-webkit-transform:translate(0,-1.5px) rotate(2.5deg);transform:translate(0,-1.5px) rotate(2.5deg)}
+26%,50%{-webkit-transform:translate(0,.5px) rotate(.5deg);transform:translate(0,.5px) rotate(.5deg)}
+28%{-webkit-transform:translate(0,.5px) rotate(1.5deg);transform:translate(0,.5px) rotate(1.5deg)}
+30%,40%,62%,76%,88%{-webkit-transform:translate(0,-.5px) rotate(2.5deg);transform:translate(0,-.5px) rotate(2.5deg)}
+32%,34%,66%{-webkit-transform:translate(0,1.5px) rotate(-.5deg);transform:translate(0,1.5px) rotate(-.5deg)}
+42%{-webkit-transform:translate(0,2.5px) rotate(-1.5deg);transform:translate(0,2.5px) rotate(-1.5deg)}
+44%,70%{-webkit-transform:translate(0,1.5px) rotate(.5deg);transform:translate(0,1.5px) rotate(.5deg)}
+48%,74%,82%{-webkit-transform:translate(0,-.5px) rotate(.5deg);transform:translate(0,-.5px) rotate(.5deg)}
+52%,56%,60%{-webkit-transform:translate(0,2.5px) rotate(2.5deg);transform:translate(0,2.5px) rotate(2.5deg)}
+58%{-webkit-transform:translate(0,.5px) rotate(2.5deg);transform:translate(0,.5px) rotate(2.5deg)}
+84%{-webkit-transform:translate(0,1.5px) rotate(2.5deg);transform:translate(0,1.5px) rotate(2.5deg)}
+90%{-webkit-transform:translate(0,2.5px) rotate(-.5deg);transform:translate(0,2.5px) rotate(-.5deg)}
+92%{-webkit-transform:translate(0,.5px) rotate(-.5deg);transform:translate(0,.5px) rotate(-.5deg)}
+94%{-webkit-transform:translate(0,2.5px) rotate(.5deg);transform:translate(0,2.5px) rotate(.5deg)}
+0%,100%{-webkit-transform:translate(0,0) rotate(0);transform:translate(0,0) rotate(0)}
+} /*博主字样颤动效果*/
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+/*多说表情*/
+#ds-smilies-tooltip ul.ds-smilies-tabs {
+    display: none;
+}
+#ds-smilies-tooltip .ds-smilies-container {
+    padding: 15px 15px;
+    height: 200px;
+    margin-left: 0 !important;
+}
+#ds-smilies-tooltip .ds-smilies-container li {
+    width: auto;
+    max-width: 100px;
+    height: 40px !important;
+    margin: 0 7px;
+}
+#ds-smilies-tooltip .ds-smilies-container li img{
+	height:30px;
+}
+img.biaoqing, #ds-thread #ds-reset .ds-comment-body img.biaoqing {
+    display: inline;
+    margin: 0;
+    width: auto;
+    max-width: 6.25rem;
+}
+
+img.newpaopao, #ds-thread #ds-reset .ds-comment-body img.newpaopao {
+    margin-bottom: -0.25rem;
+    min-height: 1.875rem;
+    height: 1em;
+}
+img.alu, #ds-thread #ds-reset .ds-comment-body img.alu {
+    margin-bottom: -0.3125rem;
+    min-height: 2.0625rem;
+    height: 1em;
+}
+
