@@ -108,7 +108,7 @@ lue();
 reHighlightCodeBlock();
 repogithub();
 <?php if ($this->options->duoshuosn){ ?>
-if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedhw4.js') ?>"); }
+if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedhw4.min.js') ?>"); }
 <?php };?>
 });
 
