@@ -103,10 +103,10 @@ function() {
 }).on('pjax:complete',
 function() {
 NProgress.done();
- setupContents();
-lue();
-reHighlightCodeBlock();
-repogithub();
+setupContents();//灯箱组件
+lue();//文字超过div显示省略号
+reHighlightCodeBlock();//代码高亮
+//repogithub();
 <?php if ($this->options->duoshuosn){ ?>
 if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedhw4.min.js') ?>"); }
 <?php };?>
