@@ -2,6 +2,9 @@
 
 ![Responsive Screen Mockup Pack.png](http://www.ihewro.com/usr/uploads/2016/10/739013502.png)
 
+## 说明
+
+任何建议或者功能添加，都可以提出issue或者pull request 给我\(^o^)/~
 
 ## 主题介绍
 
@@ -43,15 +46,11 @@ Leaf应用而生，leaf专注于记录与阅读，没有太多的功能，没有
 * [ShowGithubRepo](http://techair.cc/88.html)
 
 
-
-## 下载地址
-<repo>ihewro/A-Typecho-Theme-Leaf/</repo>
-
 ---
 
 一款免费的用心主题，
 如果你喜欢，不妨给一个`star`给我一点鼓励吧。
-如果你愿意，不妨支持一杯咖啡的零钱。
+如果你愿意，不妨支持一元钱。
 支付宝：
 <span id="alipay"><img src="http://www.ihewro.com/usr/uploads/2016/09/124027949.jpg" width="200px" height="200px" /></span>
 
