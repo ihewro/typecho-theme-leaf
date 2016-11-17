@@ -14,7 +14,11 @@
 	(function() {
 		var ds = document.createElement("script");
 		ds.type = "text/javascript";ds.async = true;
-		ds.src = "<?php $this->options->themeUrl('assets/js/embedhw4.min.js') ?>";
+		<?php if (!empty($this->options->indexsetup) && in_array('webssl', $this->options->indexsetup)) : ?>
+		ds.src = "<?php $this->options->themeUrl('assets/js/embedssl.min.js') ?>";
+		<?php else : ?>
+		ds.src = "<?php $this->options->themeUrl('assets/js/embed.min.js') ?>";
+		<?php endif ;?>
 		ds.charset = "UTF-8";
 		(document.getElementsByTagName("head")[0] 
 		|| document.getElementsByTagName("body")[0]).appendChild(ds);
