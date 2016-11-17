@@ -13,6 +13,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
  
  <div id="pjax-container">
+ <style>
+	 #search {
+	 display: none;
+	 }
+</style>
 <?php if ( $this->options->Styleswitch =='1' ) : ?>
  <style>
  #nav-menu i,#nav-menu:after,#nav-menu:before {
@@ -192,10 +197,11 @@ cover.t.on('load', function() {
 }
 imageeffct();
 <?php endif; ?>
+	
 //首页搜索	
-	var $searchbox = $("#search");
-	$searchbox.hide();
 $(function(){
+var $searchbox = $("#search");
+//$searchbox.hide();
 $("#search-Button").bind("click",function(event){
 	event.preventDefault();
 	if($searchbox.is(":visible")){

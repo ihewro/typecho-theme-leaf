@@ -1,4 +1,4 @@
-# Leaf 2.7(2016/11/17更新)
+# Leaf 2.7(2016/10/22更新)
 
 ![Responsive Screen Mockup Pack.png](http://www.ihewro.com/usr/uploads/2016/10/739013502.png)
 
