@@ -21,12 +21,12 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 <?php if (!is_pjax()) { ?>
     <!-- 使用url函数转换相关路径 -->
-<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js" type="text/javascript"></script>
 <script>
         // Fallback to loading jQuery from a local path if the CDN is unavailable
         (window.jQuery || document.write('<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"><\/script>'));
 </script>
-<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <?php if ($this->options->duoshuosn){ ?>
 <?php if ( $this->options->duoshuoStyleswitch =='0' ) : ?>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/duoshuo-disqus.min.css'); ?>">
