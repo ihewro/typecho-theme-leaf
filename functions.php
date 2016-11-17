@@ -2,11 +2,14 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
+	define("Leaf_Version", "2.8");
+	echo '<p style="font-size:16px;text-align:center;">感谢您使用Leaf主题 :<font color="#38b48b">Leaf</font><font color="#F40"> '.Leaf_Version.'</font> ![<a href="http://www.ihewro.com/archives/378" target="_blank">帮助与反馈</a>]</p>';
 	//首页设置开关
     $indexsetup = new Typecho_Widget_Helper_Form_Element_Checkbox('indexsetup', 
     array('IndexImage' => _t('启用首页图片摇动效果'),
-    'Indexrandombackground' => _t('启用首页随机显示背景图片')),
-    array('IndexImage', 'Indexrandombackground'), _t('首页设置开关'));
+    'Indexrandombackground' => _t('启用首页随机显示背景图片'),
+	'webssl' => _t('多说启用https数据加密（为https站点设置,有问题<a href="http://www.ihewro.com/archives/378">反馈</a>）')),
+    array('IndexImage', 'Indexrandombackground'), _t('全站设置开关'));
     
     $form->addInput($indexsetup->multiMode());
 	
@@ -36,9 +39,15 @@ function themeConfig($form) {
     $form->addInput($parallaxeffect);
 		
 	//配置多说
-    $duoshuosn = new Typecho_Widget_Helper_Form_Element_Text('duoshuosn',NULL, 'hewro','配置多说short_name', '填写你的多说评论的short_name，使博客的评论系统可用,不填则不启用多说，包括不加载多说js与css<br><font color="#F40">注意：</font>这里的多说css都是主题内置好的，所以多说自定义css里的css最好清空，否则会有不美观的现象发生.<br>博主认证必须修改aseets/css/duoshuo.min.css的博主ID');
+    $duoshuosn = new Typecho_Widget_Helper_Form_Element_Text('duoshuosn',NULL, 'hewro','配置多说short_name', '填写你的多说评论的short_name，使博客的评论系统可用,不填则不启用多说，包括不加载多说js与css<br><font color="#F40">注意：</font>这里的多说css都是主题内置好的，所以多说自定义css里的css最好清空，否则会有不美观的现象发生.');
     $duoshuosn->input->setAttribute('class', 'mini');
     $form->addInput($duoshuosn);
+	
+	//配置多说博主标志
+    $duoshuoid = new Typecho_Widget_Helper_Form_Element_Text('duoshuoid',NULL, '574993','配置多说博主标志的user-id', '<font color="#F40">注意：</font>配置多说博主标志的user-id，<a target="_blank" href="http://duoshuo.com/settings/avatar/">点击这个地址</a> 点击你的名字，出现的网页的最后数字就是你的ID');
+    $duoshuoid->input->setAttribute('class', 'mini');
+    $form->addInput($duoshuoid);
+	
 	//多说风格切换
 	
     $duoshuoStyleswitch = new Typecho_Widget_Helper_Form_Element_Radio('duoshuoStyleswitch', 
@@ -83,9 +92,15 @@ function themeConfig($form) {
 	$form->addInput($links);
 	
 	//播放器音乐
-	$musiclist = new Typecho_Widget_Helper_Form_Element_Textarea('musiclist', NULL,'{title:"晚安；）",artist:"性人盒",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/wanan.mp3",cover:"http://p4.music.126.net/nz1ZXXSYg85COLFURrJodw==/7975857349674458.jpg",},
-{title:"远山",artist:"末小皮",mp3:"http://7xlk7n.com1.z0.glb.clouddn.com/%E8%BF%9C%E5%B1%B1.mp3",cover:"http://p3.music.126.net/BceFKRe6K1aMsnu1QTFBYw==/8978611952438381.jpg",},', _t('音乐播放器的音乐列表'), _t('根据已给的格式填入你的HTML代码'));
+	$musiclist = new Typecho_Widget_Helper_Form_Element_Textarea('musiclist', NULL,'{title:"晚安；）",artist:"性人盒",mp3:"//o9o5ixzu2.qnssl.com/wanan.mp3",cover:"//o9o5ixzu2.qnssl.com/7975857349674458.jpg",},
+{title:"远山",artist:"末小皮",mp3:"//o9o5ixzu2.qnssl.com/%E8%BF%9C%E5%B1%B1.mp3",cover:"//o9o5ixzu2.qnssl.com/8978611952438381.jpg",},', _t('音乐播放器的音乐列表'), _t('根据已给的格式填入你的HTML代码'));
 	$form->addInput($musiclist);
+	//pjax-send
+    $pjaxSendAction = new Typecho_Widget_Helper_Form_Element_Textarea('pjaxSendAction', NULL, NULL, _t('PJAX:SEND Action'), _t('启用 PJAX 选项后, 你的第三方插件可能会在 PJAX 中失效。在这种情况下, 你可能需要重新注册事件或做其他处理。<br>在这里写入你需要进行处理的 JS 代码。并确保正确,否则可能会导致后续 JS 代码无法执行。<br>这些 JS 代码会在 PJAX 发送网络请求(PJAX 触发事件 pjax:send)的时候执行。'));
+    $form->addInput($pjaxSendAction);
+	//pjax-complete
+    $pjaxCompleteAction = new Typecho_Widget_Helper_Form_Element_Textarea('pjaxCompleteAction', NULL, NULL, _t('PJAX:COMPLETE Action'), _t('启用 PJAX 选项后, 你的第三方插件可能会在 PJAX 中失效。在这种情况下, 你可能需要重新注册事件或做其他处理。<br>在这里写入你需要进行处理的 JS 代码。并确保正确,否则可能会导致后续 JS 代码无法执行。<br>这些 JS 代码会在 PJAX 完成页面加载并替换(PJAX 触发事件 pjax:complete)的时候执行。<br>绝大多数的处理可能应该在这里执行。你需要根据实际情况判断。'));
+    $form->addInput($pjaxCompleteAction);
 	
 }/*后台设置结束*/
 

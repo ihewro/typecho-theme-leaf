@@ -92,5 +92,5 @@ lue();
 		}
 	};
 
-	console.log('\n %c theme Leaf v2.7 %c by友人C<ihewro.com> 2016/10/19 \n\n','color:#444;background:#eee;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#eee;background:#444;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+	console.log('\n %c theme Leaf v2.8 %c by友人C<ihewro.com> 2016/11/17 \n\n','color:#444;background:#eee;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#eee;background:#444;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 /*希望使用本主题能够保留本行注释QWQ*/

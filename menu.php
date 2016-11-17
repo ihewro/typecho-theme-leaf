@@ -99,17 +99,21 @@ $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="
 }).on('pjax:send',
 function() {
     NProgress.start();
-	
+ <?php $this->options->pjaxSendAction(); ?>	
 }).on('pjax:complete',
 function() {
 NProgress.done();
 setupContents();//灯箱组件
 lue();//文字超过div显示省略号
 reHighlightCodeBlock();//代码高亮
-//repogithub();
 <?php if ($this->options->duoshuosn){ ?>
-if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedhw4.min.js') ?>"); }
+<?php if (!empty($this->options->indexsetup) && in_array('webssl', $this->options->indexsetup)) : ?>
+if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embedssl.min.js') ?>"); }
+<?php else : ?>
+if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embed.min.js') ?>"); }
+<?php endif ;?>
 <?php };?>
+ <?php $this->options->pjaxCompleteAction(); ?>
 });
 
 </script>
