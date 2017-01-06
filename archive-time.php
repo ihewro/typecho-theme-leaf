@@ -16,17 +16,18 @@ $this->need('header.php'); ?>
  <?php
 					$this->widget('Widget_Contents_Post_Recent', 'pageSize=10000')->to($archives);
 				    $year=0; $i=0; $j=0;
+				    $output = '';
 				    while($archives->next()):
 				        $year_tmp = date('Y',$archives->created);
 				        $y=$year;
-				        if ($year != $year_tmp && $year > 0) $output .= '<div></div>';
+				        if ($year != $year_tmp && $year > 0) $output .= '';
 				        if ($year != $year_tmp) {
 				            $year = $year_tmp;
-				            $output = '<h2 class="archive-year">'. $year .'</h2>';
+				            $output .= '<h2 class="archive-year">'. $year .'</h2>';
 				        }
 				        $output .= '<li><a class="transition archive-iterm" href="'.$archives->permalink .'"><h3 class="archive-title">'. $archives->title .'</h3><p class="archive-date">'.date('F jS ',$archives->created).'</p></a></li>';
 				    endwhile;
-				    
+				    $output .= '';
 				    echo $output;
 				?>
   

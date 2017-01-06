@@ -17,6 +17,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	 #search {
 	 display: none;
 	 }
+	 .content2 {
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    color: #fff;
+}
+.p_part p {
+    margin: 0;
+}
 </style>
 <?php if ( $this->options->Styleswitch =='1' ) : ?>
  <style>
@@ -214,11 +224,11 @@ $("#search-Button").bind("click",function(event){
 });
 });
 
-
+/*首页彩蛋
 $(".index-title").click(function(){	
 	win_tips({title:'这是第1个彩蛋',text:'你开启了一扇秘密的门！一共5个彩蛋藏在整个网站里面┗|｀O′|┛ 嗷~~',duration:4000,icon:'fa fa-heart'});
 })
-
+*/
 
 </script>
 <div class="index">
@@ -244,6 +254,10 @@ $(".index-title").click(function(){
  <div id="style0">
   <div class="vertical-center-child index-container">
     <h1 class="index-title"><?php $this->options->IndexName(); ?></h1>
+    <div class="content2">
+<div class="p_part"><p><?php $this->options->IndexIntroduction(); ?></p>
+</div>
+</div>
     <div class="index-contacts">
 		<?php if ($this->options->socialgithub): ?>
 			<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">
